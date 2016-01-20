@@ -98,5 +98,67 @@ public class IntArrayWorker
       }
     }
   }
- 
-}
+
+  /**
+     * An example of a method - replace this comment with your own
+     *  that describes the operation of the method
+     */
+    public int getCount(int integer)
+    {
+        int count = 0;
+        for (int row = 0; row < matrix.length; row++)
+        {
+            for (int col = 0; col < matrix[0].length; col++)
+            {
+                if (matrix[row][col] == integer)
+                {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+
+  /**
+     * An example of a method - replace this comment with your own
+     *  that describes the operation of the method
+     */
+    public int getLargest()
+    {
+        int largest = 0;
+        for (int row = 0; row < matrix.length; row++)
+        {
+            for (int col = 0; col < matrix[0].length; col++)
+            {
+                if (matrix[row][col] > largest)
+                {
+                    largest = matrix[row][col];
+                }
+            }
+        }
+        return largest;
+    }
+
+    /**
+     * An example of a method - replace this comment with your own
+     *  that describes the operation of the method
+     *
+     * @pre     preconditions for the method
+     *          (what the method assumes about the method's parameters and class's state)
+     * @post    postconditions for the method
+     *          (what the method guarantees upon completion)
+     * @param   y   description of parameter y
+     * @return  description of the return value
+     */
+    public int getColTotal(int column)
+    {
+        int sum = 0;
+        for (int row = 0; row < matrix.length; row++)
+        {
+            sum += matrix[row][column];
+        }
+        return sum;
+    }
+
+
+} 
