@@ -52,7 +52,7 @@ public class CollageLab extends SimplePicture
         blank.copy(pic9,472,472);
         Pixel[][] pixels = blank.getPixels2D();
         blank.explore();
-        
+        blank.write("MyCollage.jpg");
     }
 
 }
